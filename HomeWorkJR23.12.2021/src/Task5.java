@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 /*
@@ -11,6 +12,17 @@ import java.util.Scanner;
 public class Task5 {
     public static void main(String[] args) {
         String[] arrStr = {"Утром", "Я", "Сильней", "Но", "Всего", "Верней", " При", "Луне", "Надуваю", "Парус"};
+        String tmp;
+
+        for (int i = 0; i < (arrStr.length / 2); i++) {
+            tmp = arrStr[(arrStr.length - 1) - i];
+            arrStr[(arrStr.length - 1) - i] = arrStr[i];
+            arrStr[i] = tmp;
+        }
+
+        System.out.println(Arrays.toString(arrStr));
+
+
 
 
     }

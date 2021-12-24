@@ -4,7 +4,6 @@
 Поменяйте местами первый и второй элемент массива.
  */
 
-import java.util.Arrays;
 
 public class Task3 {
     public static void main(String[] args) {
