@@ -12,8 +12,7 @@ public class Task3 {
         int[] numbers = {3, 99, 18, 15, 1};
 
         int first = numbers[0];
-        int second = numbers[1];
-        numbers[0] = second;
+        numbers[0] = numbers[1];
         numbers[1] = first;
     }
 }
