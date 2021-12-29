@@ -22,7 +22,6 @@ public class Task2 {
                 array[i][j] = random.nextInt(100);
             }
         }
-
         System.out.println(Arrays.deepToString(array));
     }
 }

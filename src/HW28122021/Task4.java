@@ -31,9 +31,12 @@ public class Task4 {
 
     static boolean isSymmetric(int[][] matrix) {
         for (int i = 0; i < matrix.length; i++)
-            for (int j = i + 1; j < matrix.length - i; j++)
-                if (matrix[i][j] != matrix[j][i])
+            for (int j = i + 1; j < matrix.length; j++) {
+                int num1 = matrix[i][j];
+                int num2 = matrix[j][i];
+                if (num1 != num2)
                     return false;
+            }
         return true;
     }
 }
